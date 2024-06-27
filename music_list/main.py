@@ -37,7 +37,7 @@
 #                                                redirect_uri=YOUR_APP_REDIRECT_URI,
 #                                                scope="playlist-modify-private",
 #                                                show_dialog=True,
-#                                                cache_path="token.txt"
+#                                                cache_path=".cache"
 #                                                ))
 #
 # results = sp.current_user()
