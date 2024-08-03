@@ -59,12 +59,10 @@ def add_cafe():
         with open('cafe-data.csv', 'a', encoding="utf8", newline='') as csv_file:
             writer = csv.writer(csv_file, delimiter=',')
             writer.writerow(fieldnames)
-        print(cafe, location)
-        print("True")
+        return render_template('add.html', form=CafeForm(formdata=None))
     # Exercise:
     # Make the form write a new row into cafe-data.csv
     # with   if form.validate_on_submit()
-
     return render_template('add.html', form=form)
 
 
